@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=jztwpsIzEGc&ab_channel=NicholasRenotte
+https://colab.research.google.com/drive/1zKJseoPInOpTLrHMPS0G0qoe5db6PWUb?usp=sharing#scrollTo=2Zeg8zsqXCsm
+
+regularization in convolution layers : In the prediction step, suppose you are given some features, out of which only some are relevant features, and the others are spurious features. By regularizing, you want the weight of spurious features to be reduced.
+data augmentation in test set : Do it only on the training set. And, of course, make sure that the augmentation does not make the label wrong (e.g. when rotating 6 and 9 by about 180°).
+
+The reason why we use a training and a test set in the first place is that we want to estimate the error our system will have in reality. So the data for the test set should be as close to real data as possible.
+
+If you do it on the test set, you might have the problem that you introduce errors. For example, say you want to recognize digits and you augment by rotating. Then a 6 might look like a 9. But not all examples are that easy. Better be save than sorry.
+
+Data augmentation : data sayısını arttırmaz
